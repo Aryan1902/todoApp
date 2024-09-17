@@ -5,7 +5,7 @@ const Todo = require("../models/Todo");
 
 exports.updateTodo = async(req,res) => {
     try {
-        const {id} = req.params;
+        const {id} = req.params; // Id fetch karne ka alterative way
         const {title, description} = req.body;
 
         const todo = await Todo.findByIdAndUpdate(

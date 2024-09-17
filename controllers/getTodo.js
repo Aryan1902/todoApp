@@ -6,7 +6,7 @@ const Todo = require("../models/Todo");
 exports.getTodo = async(req,res) => {
     try {
             //fetch all todo items from database
-            const todos = await Todo.find({});
+            const todos = await Todo.find({}); // Aapne koi parameter ya condition nhi btayi ,, aapne kha jitne hein saare le aao
 
             //response
             res.status(200)

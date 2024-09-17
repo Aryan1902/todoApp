@@ -15,7 +15,7 @@ app.use(express.json());
 const todoRoutes = require("./routes/todos");
 
 //mount the todo API routes
-app.use("/api/v1", todoRoutes);
+app.use("/api/v1", todoRoutes); // Humare localhost ke baad /api/v1 likha hua aajaye..
 
 
 //start server
